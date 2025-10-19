@@ -10,14 +10,12 @@ import Contact from './pages/Contact';
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/website">  {/* ✅ Added basename */}
       <div className="h-screen flex flex-col overflow-hidden">
-        {/* Header - Fixed Height */}
         <div className="flex-shrink-0">
           <Navbar />
         </div>
 
-        {/* Main Content - Scrollable */}
         <main className="flex-1 overflow-hidden">
           <div className="h-full overflow-y-auto">
             <Routes>
@@ -31,7 +29,6 @@ export default function App() {
           </div>
         </main>
 
-        {/* Footer - Fixed Height */}
         <div className="flex-shrink-0">
           <Footer />
         </div>

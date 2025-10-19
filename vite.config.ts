@@ -1,12 +1,11 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/website",
+  base: '/website/', // ✅ must end with a slash
   server: {
-    port: 4000, // Change the dev server port here
-    open: true, // Optional: automatically open in browser
+    port: 4000,
+    open: true,
   },
 });
