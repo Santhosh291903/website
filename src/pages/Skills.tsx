@@ -12,6 +12,23 @@ const skillCategories = [
       'App Services',
       'Kubernetes Services',
       'SQL Databases',
+      'Azure SQL Database',
+'Azure Cosmos DB',
+'Azure Database for MySQL',
+'Azure Database for PostgreSQL',
+'Azure Database for MariaDB',
+'Container Apps',
+
+'Azure Virtual Network',
+'Azure Load Balancer',
+'Azure Application Gateway',
+'Azure VPN Gateway',
+'Azure DevOps',
+'Azure Pipelines',
+'Azure Monitor',
+'Azure Log Analytics',
+'Azure Application Insights',
+
     ],
     gradient: 'from-blue-500 to-cyan-500',
     delay: 0.1
@@ -19,28 +36,28 @@ const skillCategories = [
   {
     title: 'AWS',
     icon: Cpu,
-    skills: ['EC2', 'S3', 'RDS', 'Route 53', 'Athena'],
-    gradient: 'from-orange-500 to-yellow-500',
+    skills: ['Elastic Compute Cloud', 'Amazon Lightsail' , 'Simple Storage Service', 'Elastic Block Store' ,'Relational Database Service', 'Amazon Route 53', 'Athena' ,'Simple Notification Service' ,'AWS Lambda' , 'Amazon Elastic Kubernetes Service (EKS)' ,'Amazon Elastic Container Service (ECS)' ,'Elastic Load Balancer' , 'Amazon EFS' ,'Amazon EBS' ,'Amazon VPC' ,'AWS IAM ' ,'AWS CodePipeline '] ,
+     gradient: 'from-orange-500 to-yellow-500',
     delay: 0.2
   },
   {
     title: 'Containerization',
     icon: Server,
-    skills: ['Kubernetes', 'Docker Swarm', 'Container Orchestration'],
+    skills: ['Kubernetes', 'Docker Swarm', 'Container Orchestration' ,'Docker' , 'Helm' , 'Docker Compose' ],
     gradient: 'from-red-500 to-pink-500',
     delay: 0.6
   },
   {
     title: 'Scripting Languages',
     icon: Code,
-    skills: ['Python', 'Bash'],
+    skills: ['Python', 'Bash' ,'PowerShell' ],
     gradient: 'from-green-500 to-emerald-500',
     delay: 0.3
   },
   {
     title: 'CI/CD',
     icon: Boxes,
-    skills: ['GitHub Actions', 'Azure DevOps', 'Jenkins'],
+    skills: ['GitHub Actions', 'Azure DevOps', 'Jenkins' , 'GitLab' ],
     gradient: 'from-purple-500 to-pink-500',
     delay: 0.4
   },
