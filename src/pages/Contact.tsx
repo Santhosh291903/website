@@ -27,7 +27,7 @@ const contactInfo = [
 
 export default function Contact() {
   return (
-    <div className="min-h-full bg-gradient-to-br from-purple-900 via-gray-900 to-purple-900 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-emerald-900 relative overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
@@ -67,16 +67,16 @@ export default function Contact() {
                   scale: 1.05,
                   y: -8
                 }}
-                className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:bg-white/20 transition-all duration-300 group cursor-pointer h-full"
+                className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:bg-white/20 transition-all duration-300 group cursor-pointer h-full flex flex-col"
               >
-                <div className="text-center">
+                <div className="flex flex-col items-center justify-center flex-1">
                   <div className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${item.gradient} flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300`}>
                     <Icon className="text-white" size={32} />
                   </div>
-                  <h3 className="text-white font-semibold text-xl mb-3">
+                  <h3 className="text-white font-semibold text-xl mb-3 text-center">
                     {item.label}
                   </h3>
-                  <p className="text-gray-300 text-lg font-medium">
+                  <p className="text-gray-300 text-lg font-medium text-center break-words hyphens-auto leading-tight">
                     {item.value}
                   </p>
                 </div>
@@ -111,19 +111,19 @@ export default function Contact() {
               {[
                 {
                   icon: Github,
-                  href: "https://github.com",
+                  href: "https://github.com/Santhosh291903/",
                   label: "GitHub",
                   gradient: "from-gray-600 to-gray-800"
                 },
                 {
                   icon: Linkedin,
-                  href: "https://linkedin.com",
+                  href: "https://www.linkedin.com/in/kishor-santhosh-p-a9b7861ab/",
                   label: "LinkedIn",
                   gradient: "from-blue-600 to-blue-800"
                 },
                 {
                   icon: MessageCircle,
-                  href: "https://twitter.com",
+                  href: "https://x.com/Santhosh_DevOps",
                   label: "Twitter",
                   gradient: "from-sky-500 to-blue-500"
                 }
@@ -179,22 +179,6 @@ export default function Contact() {
             </motion.a>
           </motion.div>
         </div>
-
-        {/* Availability Status */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
-          className="text-center mt-12 pt-8 border-t border-white/10"
-        >
-          <div className="inline-flex items-center gap-3 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full px-6 py-3">
-            <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-            <span className="text-white/80 font-medium">Currently available for new projects</span>
-          </div>
-          <p className="text-gray-400 text-sm mt-4">
-            Response time: Usually within 2-4 hours
-          </p>
-        </motion.div>
       </div>
     </div>
   );

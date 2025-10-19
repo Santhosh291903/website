@@ -50,7 +50,7 @@ const projects = [
 
 export default function Experience() {
   return (
-    <div className="min-h-full bg-gradient-to-br from-purple-900 via-gray-900 to-purple-900 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-emerald-900 relative overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
@@ -70,7 +70,7 @@ export default function Experience() {
         >
           
           <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-cyan-200 bg-clip-text text-transparent">
-            Experience & Projects
+            Experience & Projects Handled
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
             Building scalable solutions and driving innovation through cutting-edge DevOps practices
@@ -152,7 +152,7 @@ export default function Experience() {
               <Rocket className="text-white" size={24} />
             </div>
             <h2 className="text-3xl font-bold text-white">
-              Key Projects
+              Projects Handled
             </h2>
           </div>
 
@@ -216,7 +216,7 @@ export default function Experience() {
             <div className="text-gray-400">Major Projects</div>
           </div>
           <div className="text-center">
-            <div className="text-2xl font-bold text-cyan-400 mb-2">2+</div>
+            <div className="text-2xl font-bold text-cyan-400 mb-2">3+</div>
             <div className="text-gray-400">Years Experience</div>
           </div>
           <div className="text-center">

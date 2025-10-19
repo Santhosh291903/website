@@ -24,6 +24,13 @@ const skillCategories = [
     delay: 0.2
   },
   {
+    title: 'Containerization',
+    icon: Server,
+    skills: ['Kubernetes', 'Docker Swarm', 'Container Orchestration'],
+    gradient: 'from-red-500 to-pink-500',
+    delay: 0.6
+  },
+  {
     title: 'Scripting Languages',
     icon: Code,
     skills: ['Python', 'Bash'],
@@ -43,14 +50,7 @@ const skillCategories = [
     skills: ['Docker', 'Docker Compose'],
     gradient: 'from-indigo-500 to-blue-500',
     delay: 0.5
-  },
-  {
-    title: 'Containerization',
-    icon: Server,
-    skills: ['Kubernetes', 'Docker Swarm', 'Container Orchestration'],
-    gradient: 'from-red-500 to-pink-500',
-    delay: 0.6
-  },
+  }
 ];
 
 const techStack = [
@@ -64,7 +64,7 @@ const techStack = [
 
 export default function Skills() {
   return (
-    <div className="min-h-full bg-gradient-to-br from-purple-900 via-gray-900 to-purple-900 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-emerald-900 relative overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
@@ -222,7 +222,7 @@ export default function Skills() {
           {[
             { number: '15+', label: 'Technologies' },
             { number: '6', label: 'Skill Categories' },
-            { number: '90%', label: 'Cloud Expertise' },
+            { number: '60%', label: 'Cloud Expertise' },
             { number: '100%', label: 'Automation Focus' }
           ].map((stat, index) => (
             <div key={stat.label} className="text-center">

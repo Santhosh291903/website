@@ -3,7 +3,7 @@ import { Award, Target, TrendingUp, Cloud, Server, Code, Zap, Users, Clock, Shie
 
 export default function About() {
   return (
-    <div className="min-h-full bg-gradient-to-br from-purple-900 via-gray-900 to-purple-900 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-emerald-900 relative overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
@@ -60,15 +60,15 @@ export default function About() {
                 className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 text-center"
               >
                 <Users className="text-cyan-400 mx-auto mb-2" size={24} />
-                <div className="text-2xl font-bold text-white">50+</div>
-                <div className="text-gray-400 text-sm">Projects</div>
+                <div className="text-2xl font-bold text-white">15+</div>
+                <div className="text-gray-400 text-sm">Projects Handled</div>
               </motion.div>
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 text-center"
               >
                 <Clock className="text-cyan-400 mx-auto mb-2" size={24} />
-                <div className="text-2xl font-bold text-white">5+</div>
+                <div className="text-2xl font-bold text-white">3+</div>
                 <div className="text-gray-400 text-sm">Years Experience</div>
               </motion.div>
             </div>
@@ -147,13 +147,13 @@ export default function About() {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="mt-16"
         >
-          <h2 className="text-3xl font-bold text-white text-center mb-8">Core Technologies</h2>
+          <h2 className="text-3xl font-bold text-white text-center mb-8">Technologies</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
               { name: "Azure", icon: Cloud },
               { name: "AWS", icon: Cloud },
-              { name: "Docker", icon: Server },
-              { name: "Kubernetes", icon: Code },
+              { name: "Kubernetes", icon: Server },
+              { name: "Docker", icon: Code },
               { name: "GitHub Actions", icon: Zap },
               { name: "Azure DevOps", icon: TrendingUp },
               { name: "Grafana", icon: Shield },

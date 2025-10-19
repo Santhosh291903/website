@@ -175,7 +175,7 @@ const toolCategories = [
 
 export default function Tools() {
   return (
-    <div className="min-h-full bg-gradient-to-br from-purple-900 via-gray-900 to-purple-900 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-emerald-900 relative overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
@@ -215,17 +215,14 @@ export default function Tools() {
                 transition={{ duration: 0.6, delay: categoryIndex * 0.1 }}
               >
                 {/* Category Header */}
-                <motion.div
-                  whileHover={{ x: 10 }}
-                  className="flex items-center gap-4 mb-8 p-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl w-fit"
-                >
+                <div className="flex items-center gap-4 mb-8">
                   <div className={`w-12 h-12 rounded-xl bg-gradient-to-r ${category.gradient} flex items-center justify-center`}>
                     <CategoryIcon className="text-white" size={24} />
                   </div>
                   <h2 className="text-2xl font-bold text-white">
                     {category.category}
                   </h2>
-                </motion.div>
+                </div>
 
                 {/* Tools Grid */}
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
